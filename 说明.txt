@@ -1,0 +1,5 @@
+taotao图片服务器为：CentOS7 64-taotao-vftp-image-192.168.137.10
+taotao缓存服务器为：CentOS7 64 - taotao-redis1-192.168.137.11---16
+taotao全文搜索服务器为：CentOS7 64-solr-192.168.137.9  
+安装了ruby环境以及修改yum阿里源
+
