@@ -26,11 +26,16 @@ public class CartController {
 			@RequestParam(defaultValue="1")Integer num, 
 			HttpServletRequest request, HttpServletResponse response) {
 		TaotaoResult result = cartService.addCartItem(itemId, num, request, response);
-		return "redirect:/car/success.html";
+		
+		//System.out.println("CartController---addCartItem:"+itemId+"---"+num);
+		//return "redirect:/car/success.html";
+		return "cartSuccess";    //直接到这个页面  添加删除功能有效 了
 	}
 	
+	//这个方法没有什么用
 	@RequestMapping("/success")
 	public String showSucess() {
+		System.out.println("CartController---showSucess");
 		return "cartSuccess";
 	}
 	

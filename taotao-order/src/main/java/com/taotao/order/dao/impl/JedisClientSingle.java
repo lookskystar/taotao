@@ -1,8 +1,8 @@
-package com.taotao.rest.dao.impl;
+package com.taotao.order.dao.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.taotao.rest.dao.JedisClient;
+import com.taotao.order.dao.JedisClient;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
@@ -83,4 +83,5 @@ public class JedisClientSingle implements JedisClient {
 		jedis.close();
 		return result;
 	}
+
 }

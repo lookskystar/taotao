@@ -12,4 +12,5 @@ public class CatResult {
 	public void setData(List<?> data) {
 		this.data = data;
 	}
+	
 }
