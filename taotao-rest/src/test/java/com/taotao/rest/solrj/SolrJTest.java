@@ -12,7 +12,7 @@ public class SolrJTest {
 		SolrServer solrServer = new HttpSolrServer("http://192.168.137.9:8080/solr");
 		//创建一个文档对象
 		SolrInputDocument document = new SolrInputDocument();
-		document.addField("id", "test003");
+		document.addField("id", "test004");
 		document.addField("item_title", "测试商品3");
 		document.addField("item_price", 4567);
 		//把文档对象写入索引库
